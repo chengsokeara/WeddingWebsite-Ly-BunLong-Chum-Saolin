@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#945b5b">
+
+    <title>Wedding Invitation | BunLong & SaoLin</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Great+Vibes&family=Noto+Serif+Khmer:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===================================
+         FALLING HEARTS
+    ==================================== -->
+
+    <div id="heart-container"
+         aria-hidden="true"></div>
+
+
+    <!-- ===================================
+         WEDDING MUSIC
+    ==================================== -->
+
+    <audio id="weddingMusic"
+           loop
+           preload="auto">
+
+        <source src="music/wedding.mp4"
+                type="audio/mp4">
+
+    </audio>
+
+
+    <!-- ===================================
+         OPENING COVER
+    ==================================== -->
+
+    <section id="openingCover"
+             class="opening-cover">
+
+        <div class="cover-overlay"></div>
+
+        <div class="cover-content">
+
+            <p class="cover-subtitle">
+                The Wedding Of
+            </p>
+
+            <h1 class="script-title">
+                Our Wedding
+            </h1>
+
+            <h2 class="cover-names">
+                លី ប៊ុនឡុង
+
+                <span>&</span>
+
+                ជុំ សៅលីន
+            </h2>
+
+            <p class="cover-date">
+                26 . 12 . 2026
+            </p>
+
+
+            <!-- Title outside glass box -->
+
+            <div class="guest-title-box">
+
+                <p>សូមគោរពអញ្ជើញ</p>
+
+            </div>
+
+
+            <!-- Guest name glass box -->
+
+            <div class="guest-name-box">
+
+                <h3 id="guestName">
+                    ភ្ញៀវកិត្តិយស
+                </h3>
+
+            </div>
+
+
+            <!-- Open invitation button -->
+
+            <button
+                id="openInvitation"
+                class="open-button"
+                type="button">
+
+                ចុចបើកធៀប
+
+            </button>
+
+            <p class="cover-note">
+                សូមចុចប៊ូតុងខាងលើ
+                ដើម្បីបើកធៀបអាពាហ៍ពិពាហ៍
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================================
+         MAIN WEDDING WEBSITE
+    ==================================== -->
+
+    <main id="mainContent" hidden>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="hero section">
+
+            <div class="hero-inner">
+
+                <p class="section-kicker">
+                    Save The Date
+                </p>
+
+                <h2 class="script-title">
+                    Our Wedding
+                </h2>
+
+                <h1 class="couple-names">
+
+                    លី ប៊ុនឡុង
+
+                    <span>&</span>
+
+                    ជុំ សៅលីន
+
+                </h1>
+
+                <p class="english-names">
+                    LY BunLong & CHUM SaoLin
+                </p>
+
+                <div class="ornament">
+                    ❦
+                </div>
+
+                <p class="khmer-date">
+                    ថ្ងៃ សៅរ៍ ទី ២៦ ខែ ធ្នូ ឆ្នាំ ២០២៦
+                </p>
+
+                <p>
+                    ពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍
+                </p>
+
+
+                <!-- COUNTDOWN -->
+
+                <div class="countdown">
+
+                    <div class="time-box">
+                        <strong id="days">00</strong>
+                        <span>ថ្ងៃ</span>
+                    </div>
+
+                    <div class="time-box">
+                        <strong id="hours">00</strong>
+                        <span>ម៉ោង</span>
+                    </div>
+
+                    <div class="time-box">
+                        <strong id="minutes">00</strong>
+                        <span>នាទី</span>
+                    </div>
+
+                    <div class="time-box">
+                        <strong id="seconds">00</strong>
+                        <span>វិនាទី</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             WELCOME SECTION
+        ==================================== -->
+
+        <section class="welcome-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Welcome
+                </p>
+
+                <h2>
+                    សូមគោរពអញ្ជើញ
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+            <div class="welcome-card">
+
+                <p>សូមគោរពជូន</p>
+
+                <h3 id="welcomeGuest">
+                    ភ្ញៀវកិត្តិយស
+                </h3>
+
+                <p>
+                    យើងខ្ញុំមានកិត្តិយស
+                    សូមគោរពអញ្ជើញលោក លោកស្រី
+                    អ្នកនាងកញ្ញា និងភ្ញៀវកិត្តិយស
+                    ចូលរួមជាអធិបតី និងជាសក្ខីភាព
+                    ក្នុងពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍
+                    របស់កូនប្រុស កូនស្រីយើងខ្ញុំ។
+                </p>
+
+                <p>
+                    វត្តមានដ៏ខ្ពង់ខ្ពស់របស់លោកអ្នក
+                    គឺជាកិត្តិយស និងសេចក្តីរីករាយ
+                    ដ៏ធំធេងសម្រាប់គ្រួសារយើងខ្ញុំ។
+                </p>
+
+                <p class="welcome-thanks">
+                    សូមអរគុណ!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             BRIDE AND GROOM
+        ==================================== -->
+
+        <section class="couple-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Bride & Groom
+                </p>
+
+                <h2>
+                    កូនកំលោះ និងកូនក្រមុំ
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+
+            <div class="couple-grid">
+
+                <!-- GROOM -->
+
+                <div class="person-card">
+
+                    <img
+                        src="images/Ly BunLong.jpg"
+                        alt="Groom LY BunLong"
+                        loading="lazy"
+                    >
+
+                    <p>កូនកំលោះ</p>
+
+                    <h3>
+                        លី ប៊ុនឡុង
+                    </h3>
+
+                    <span>
+                        LY BunLong
+                    </span>
+
+                </div>
+
+
+                <div class="couple-ampersand">
+                    &
+                </div>
+
+
+                <!-- BRIDE -->
+
+                <div class="person-card">
+
+                    <img
+                        src="images/Chum SaoLin.jpg"
+                        alt="Bride CHUM SaoLin"
+                        loading="lazy"
+                    >
+
+                    <p>កូនក្រមុំ</p>
+
+                    <h3>
+                        ជុំ សៅលីន
+                    </h3>
+
+                    <span>
+                        CHUM SaoLin
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             PHOTO GALLERY
+        ==================================== -->
+
+        <section class="gallery-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Our Memories
+                </p>
+
+                <h2>
+                    កម្រងរូបភាពអនុស្សាវរីយ៍
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <img
+                    src="images/photo1.jpg"
+                    alt="Wedding photo 1"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo2.jpg"
+                    alt="Wedding photo 2"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo3.jpg"
+                    alt="Wedding photo 3"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo4.jpg"
+                    alt="Wedding photo 4"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo5.jpg"
+                    alt="Wedding photo 5"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo6.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+                
+                <img
+                    src="images/photo7.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo8.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/photo9.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+                <img
+                    src="images/photo10.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+                <img
+                    src="images/photo11.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+                
+                <img
+                    src="images/photo12.jpg"
+                    alt="Wedding photo 6"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             WEDDING PROGRAM
+        ==================================== -->
+
+        <section class="program-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Wedding Schedule
+                </p>
+
+                <h2>
+                    កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+
+            <div class="program-grid">
+
+                <!-- កាត់ចំណងដៃ -->
+
+                <div class="program-card">
+
+                    <h3>
+                        កម្មវិធីកាត់ចំណងដៃ
+                    </h3>
+
+                    <p class="program-year">
+                        ថ្ងៃ សៅរ៍ ទី ២៦ ខែ ធ្នូ ឆ្នាំ២០២៦
+                    </p>
+
+                    <div class="program-item">
+
+                        <strong>
+                            ០៥:០០ ល្ងាច
+                        </strong>
+
+                        <p>
+                            អញ្ជើញភ្ញៀវកិត្តិយស
+                            ពិសាភោជនាហារ
+                            នៅភោជនីយដ្ឋាន មានហួត
+                            ដោយមេត្រីភាព។
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             LOCATION
+        ==================================== -->
+
+        <section class="location-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Wedding Location
+                </p>
+
+                <h2>
+                    ទីតាំងពិធីមង្គលការ
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <div class="location-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    ទីតាំងកម្មវិធី
+                </h3>
+
+                <p>
+                    សូមបញ្ចូលអាសយដ្ឋាន
+                    ទីតាំងមង្គលការនៅទីនេះ។
+                </p>
+
+                <!-- Replace # with your Google Maps link -->
+
+                <a
+                    href="https://maps.app.goo.gl/mAT9LGdD8DBNTDRR9"
+                    class="action-button"
+                    id="mapLink"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    មើលទីតាំង Google Maps
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             WEDDING GIFT
+        ==================================== -->
+
+        <section class="gift-section section">
+
+            <div class="section-heading">
+
+                <p class="section-kicker">
+                    Wedding Gift
+                </p>
+
+                <h2>
+                    ចំណងដៃអាពាហ៍ពិពាហ៍
+                </h2>
+
+                <div class="ornament">❦</div>
+
+            </div>
+
+
+            <div class="gift-card">
+
+                <p>
+                    សូមអរគុណចំពោះការជូនពរ
+                    និងទឹកចិត្តដ៏ល្អប្រពៃ
+                    របស់លោកអ្នក។
+                </p>
+
+                <img
+                    src="images/qr-code-pu longg.jpg"
+                    alt="Wedding gift QR code"
+                    class="qr-code"
+                    loading="lazy"
+                >
+
+                <p class="small-text">
+                    សូមស្កេន QR Code
+                    សម្រាប់ចំណងដៃ
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================
+             THANK YOU
+        ==================================== -->
+
+        <footer class="thank-you-section">
+
+            <div class="thank-you-overlay"></div>
+
+            <div class="thank-you-content">
+
+                <p class="section-kicker">
+                    Thank You
+                </p>
+
+                <h3>
+                    សូមអរគុណ!
+                </h3>
+
+                <p>
+                    សូមអរគុណភ្ញៀវកិត្តិយសទាំងអស់
+                    ដែលបានចំណាយពេលវេលាដ៏មានតម្លៃ
+                    ចូលរួមក្នុងពិធីសិរីមង្គល
+                    អាពាហ៍ពិពាហ៍របស់យើងខ្ញុំ។
+                </p>
+
+                <h4>
+                    លី ប៊ុនឡុង
+                    &
+                    ជុំ សៅលីន
+                </h4>
+
+                <p>
+                    26 December 2026
+                </p>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ===================================
+         FLOATING MUSIC BUTTON
+    ==================================== -->
+
+    <button
+        id="musicButton"
+        class="music-button"
+        type="button"
+        aria-label="Play wedding music"
+        hidden>
+
+        ▶
+
+    </button>
+
+</body>
+</html>
